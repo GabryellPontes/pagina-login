@@ -1,0 +1,299 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000000;
+}
+
+h1{
+    position: absolute;
+    width: 154px;
+    height: 642px;
+    left: 642px;
+    top: 249px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #E1E1E6;
+}
+
+h2{
+    position: absolute;
+    width: 237px;
+    height: 22px;
+    left: 601px;
+    top: 300px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #7c7c8a;
+}
+
+.endereco{
+    position: absolute;
+    width: 150px;
+    height: 19px;
+    left: 525px;
+    top: 350px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E1E1E6;
+}
+
+.forma-input1{
+    position: absolute;
+    width: 400px;
+    height: 31px;
+    left: 520px;
+    top: 380px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+
+    background: #202024;
+    border-radius: 4px;
+}
+
+.input1{
+    width: 400px;
+    height: 31px;
+    top: 486px;
+    left: 520px;
+    border: 1px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+    gap: 12px;
+    background-color: #202024;
+    color: #ffffff;
+}
+
+.senha{
+    position: absolute;
+    width: 81px;
+    height: 19px;
+    left: 520px;
+    top: 450px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #E1E1E6;
+}
+
+.input2{
+    width: 400px;
+    height: 31px;
+    top: 581px;
+    left: 520px;
+    border: 1px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+    gap: 12px;
+    background-color: #202024;
+    color: #ffffff;
+}
+
+.forma-input2{
+    position: absolute;
+    width: 400px;
+    height: 31px;
+    left: 520px;
+    top: 487px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+
+    background-color: #202024;
+    border-radius: 4px;
+}
+.lembra{
+    position: absolute;
+    width: 219px;
+    height: 24px;
+    left: 520px;
+    top: 557px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+}
+
+.che input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.che {
+    width: 160px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4CC;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    border-radius: 4px;
+    background-color: #202024
+}
+
+.che:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.che input:checked ~ .checkmark{
+    background-color: #202024;
+}
+
+.che .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #81d8f7;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.che input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.botao{
+    position: absolute;
+    width: 400px;
+    height: 31px;
+    left: 520px;
+    top: 625px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+    background: #81d8f7;
+    border-radius: 4px;
+}
+
+button{
+    width: 159px;
+    height: 31px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    cursor: pointer;
+
+    background-color: #81d8f7;
+    color: #000000;
+}
+
+.esqueci{
+    position: absolute;
+    width: 143px;
+    height: 17px;
+    left: 648px;
+    top: 720px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    color: #7c7c8a;
+}
+
+.criar-conta{
+    position: absolute;
+    width: 231px;
+    height: 17px;
+    left: 604px;
+    top: 750px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+
+    color: #7c7c8a;
+}
+
+.group{
+    position: absolute;
+    width: 115px;
+    height: 125px;
+    left: 660px;
+    top: 120px;
+}
+
+.envelope {
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 20px;
+
+    color: #7c7c8a;
+}
+
+.lock{
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #7c7c8a;
+}
